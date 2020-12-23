@@ -12,5 +12,5 @@ Mini Project as proof of concept for applicants
 
 # APIs
 
-* *GET* /project - Get the project data
-* *POST* /project - Post the project data
+* **GET** /project - Get the project data
+* **POST** /project - Post the project data
