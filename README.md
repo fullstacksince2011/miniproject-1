@@ -41,6 +41,17 @@ Field types:
 
 Please use the applicable validations.
 
+* After the user clicks `Create Project` Button. Close the modal and open a new modal with the following design. You don't have to implement any APIs here.
+* You have to make sure that the first card is selected by default and user can select any card.
+* `Add card` button is non-functional.
+
+![image](https://user-images.githubusercontent.com/5981804/102990816-08089080-453e-11eb-8700-debf2d75f280.png)
+
+* When the user clicks on `Pay` button. it should take them to the following page. Which you have to populate using `GET /project` API.
+
+![image](https://user-images.githubusercontent.com/5981804/102991069-7f3e2480-453e-11eb-99ba-8d8f96f63002.png)
+
+
 # You will be judged on:
 * Git skills. (We will go through your commits)
 * Ability to convert the mockup/screenshots to a pixel perfect React code. (CSS skills)
