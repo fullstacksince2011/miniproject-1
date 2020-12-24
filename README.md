@@ -1,5 +1,5 @@
 # Mini Project
-Mini Project as a proof of concept for Frontend Developer at CleverX. Please read the following document carefully and feel free to ask any questions on Angel List, in case you are confused about anything.
+Mini Project as a proof of concept for the role of **Frontend Developer at CleverX**. Please read the following document carefully and feel free to ask any questions on Angel List, in case you are confused about anything.
 
 **This repo contains a very minimalist API server for the frontend that you have to create.**
 
