@@ -18,6 +18,16 @@ Mini Project as a proof of concept for Frontend Developer at CleverX. Please rea
 
 * **GET** /project - Get the project data.
 * **POST** /project - Post the project data.
+  
+Sample body for POST request
+```
+{
+  "name":"Mini Project",
+  "summary":"This is a project for the applicants at cleverx",
+  "cost":"980",
+  "date":"2021-01-11T18:30:00.000Z"
+}
+```
 
 
 # Your Task
@@ -34,10 +44,10 @@ Mini Project as a proof of concept for Frontend Developer at CleverX. Please rea
 
 * **You don't have to implement the "upload attachment" field.** But other than that, use the `POST /project` API to post the values of fields.
 Field types:
-* Title : string (max characters 200)
-* Description: string (max characters 2000)
-* Delivery date: date (only future dates)
-* Project cost: number (range 100-100000)
+* Title : string (max characters 80), variable name for API: "name"
+* Description: string (max characters 200), variable name for API: "summary"
+* Delivery date: date (only future dates), variable name for API: "date"
+* Project cost: number (range 100-100000), variable name for API: "cost"
 
 Please use the applicable validations.
 
