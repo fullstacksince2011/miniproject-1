@@ -40,6 +40,7 @@ Sample body for POST request
 # Task explanation
 * On a page create a button and on clicking that button, the following modal should open.
 
+## Modal design
 ![image](https://user-images.githubusercontent.com/5981804/103127062-60fb3480-46b6-11eb-8748-d9d15d79a163.png)
 
 
@@ -56,11 +57,15 @@ Please use the applicable validations.
 * You have to make sure that the first card is selected by default and user can select any card.
 * `Add card` button is non-functional.
 
+## Modal design
 ![image](https://user-images.githubusercontent.com/5981804/103126987-209bb680-46b6-11eb-83d2-e1bb4028ce7d.png)
 
 
-* When the user clicks on `Pay` button. it should take them to a page with the following section. Which you have to populate using `GET /project` API. **Remember following design is not a full page, it's a section on the page.**
+* When the user clicks on `Pay` button. it should take them to a page with the following section. Which you have to populate using `GET /project` API. 
 
+**Remember following design is not a full page, it's a section on the page.**
+
+## Section design
 ![image](https://user-images.githubusercontent.com/5981804/103127047-53de4580-46b6-11eb-87af-ad11bb88268d.png)
 
 
