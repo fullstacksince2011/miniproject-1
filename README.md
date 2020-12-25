@@ -51,7 +51,7 @@ Field types:
 * Delivery date: date (only future dates), variable name for API: "date"
 * Project cost: number (range 100-100000), variable name for API: "cost"
 
-Please use the applicable validations.
+Please use the applicable validations in the frontend only.
 
 * After the user clicks `Create Project` Button. Close the modal and open a new modal with the following design. You don't have to implement any APIs here.
 * You have to make sure that the first card is selected by default and user can select any card.
