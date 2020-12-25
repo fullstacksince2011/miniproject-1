@@ -76,3 +76,4 @@ If you need VISA CARD image, please refer to this link: https://www.merchantsign
 * Ability to convert the mockup/screenshots to a pixel perfect React code. (CSS skills)
 * Ability to write clean, readable and well structured code. (While structuring your code, think about how you'd structure it in a large React app)
 * Ability to write documentation for your code.
+* **Bonus points for writing unit tests**
