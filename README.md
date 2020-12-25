@@ -57,7 +57,7 @@ Please use the applicable validations.
 
 ![image](https://user-images.githubusercontent.com/5981804/102990816-08089080-453e-11eb-8700-debf2d75f280.png)
 
-* When the user clicks on `Pay` button. it should take them to a page with following section. Which you have to populate using `GET /project` API.
+* When the user clicks on `Pay` button. it should take them to a page with the following section. Which you have to populate using `GET /project` API. **Remember following design is not a full page, it's a section on the page.**
 
 ![image](https://user-images.githubusercontent.com/5981804/102991069-7f3e2480-453e-11eb-99ba-8d8f96f63002.png)
 
