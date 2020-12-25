@@ -40,7 +40,8 @@ Sample body for POST request
 # Task explanation
 * On a page create a button and on clicking that button, the following modal should open.
 
-![image](https://user-images.githubusercontent.com/5981804/102990160-ee1a7e00-453c-11eb-9761-deb17b863d51.png)
+![image](https://user-images.githubusercontent.com/5981804/103127062-60fb3480-46b6-11eb-8748-d9d15d79a163.png)
+
 
 * **You don't have to implement the "upload attachment" field.** But other than that, use the `POST /project` API to post the values of fields.
 Field types:
@@ -55,11 +56,12 @@ Please use the applicable validations.
 * You have to make sure that the first card is selected by default and user can select any card.
 * `Add card` button is non-functional.
 
-![image](https://user-images.githubusercontent.com/5981804/102990816-08089080-453e-11eb-8700-debf2d75f280.png)
+![image](https://user-images.githubusercontent.com/5981804/103126987-209bb680-46b6-11eb-83d2-e1bb4028ce7d.png)
+
 
 * When the user clicks on `Pay` button. it should take them to a page with the following section. Which you have to populate using `GET /project` API. **Remember following design is not a full page, it's a section on the page.**
 
-![image](https://user-images.githubusercontent.com/5981804/102991069-7f3e2480-453e-11eb-99ba-8d8f96f63002.png)
+![image](https://user-images.githubusercontent.com/5981804/103127047-53de4580-46b6-11eb-87af-ad11bb88268d.png)
 
 
 # You will be judged on:
