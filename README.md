@@ -57,6 +57,8 @@ Please use the applicable validations in the frontend only.
 * You have to make sure that the first card is selected by default and user can select any card.
 * `Add card` button is non-functional.
 
+If you need VISA CARD image, please refer to this link: https://www.merchantsignage.visa.com/brand_guidelines
+
 ## Modal design
 ![image](https://user-images.githubusercontent.com/5981804/103126987-209bb680-46b6-11eb-83d2-e1bb4028ce7d.png)
 
