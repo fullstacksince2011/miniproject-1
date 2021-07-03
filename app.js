@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Compression
-app.use(require('compression')({threshold: 2048}));
+app.use(require('compression')({ threshold: 2048 }));
 
 // Request Logging
 app.use(require('morgan')(
@@ -36,26 +36,35 @@ app.use(require('morgan')(
             tokens.url(req, res),
             tokens.status(req, res),
             "'IP",
-            tokens['remote-addr'](req,res),
+            tokens['remote-addr'](req, res),
             "GOT",
-            tokens.res(req, res, 'content-length'), 
+            tokens.res(req, res, 'content-length'),
             "bytes IN",
-            tokens['response-time'](req, res)+"ms'"
+            tokens['response-time'](req, res) + "ms'"
         ].join(' ');
-    },{
-        skip : function(req,res){  return req.url.match(/^\/(js|css|html|img)/); }
-    })
+    }, {
+    skip: function (req, res) { return req.url.match(/^\/(js|css|html|img)/); }
+})
 );
+app.use(async (req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "*"); //Origin, X-Requested-With, Content-Type, Accept, Authorization
 
+    if (req.method === "OPTIONS") {
+        res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE");
+        return res.status(200).json({});
+    }
+    next();
+});
 var routes = require("./routes");
-    
+
 routes.init(app);
 
 // Crash event handling
-process.on('unhandledRejection', (reason, p) => { 
-    console.log("APP",reason);
+process.on('unhandledRejection', (reason, p) => {
+    console.log("APP", reason);
 });
 
-process.on('uncaughtException', (err) => { 
-    console.log("APP",err);
+process.on('uncaughtException', (err) => {
+    console.log("APP", err);
 });
