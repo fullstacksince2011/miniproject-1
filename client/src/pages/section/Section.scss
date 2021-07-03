@@ -1,0 +1,86 @@
+.paySection {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 50%;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 4rem;
+    .top-Title {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: 600;
+        font-size: 16px;
+        .icon {
+            color: green;
+            margin-right: 1rem;
+        }
+        .msg {
+            color: #1890ff;
+        }
+    }
+    .content-container {
+        padding: 3rem;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            .left {
+                font-size: 18px;
+                font-weight: 600;
+                color: #636363;
+            }
+            .right {
+                text-align: right;
+                .price {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #145cff;
+                }
+                .price-info {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #a2a2a2;
+                }
+            }
+        }
+        .msg {
+            font-size: 17px;
+            font-weight: 500;
+
+            color: #818181;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+        .bottom-container {
+            display: flex;
+            align-items: center;
+            .m-between {
+                margin-right: 2rem;
+            }
+            .content {
+                display: flex;
+                align-items: center;
+                font-size: 13px;
+                font-weight: 500;
+                color: #818181;
+                .icon {
+                    color: #145cff;
+                    margin-right: 0.5rem;
+                    font-size: 20px;
+                }
+            }
+        }
+        .button-cancel {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2rem;
+            .ant-btn-lg {
+                padding: 6.4px 20px;
+                font-weight: 600;
+                font-size: 17px;
+                // height: 40px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
