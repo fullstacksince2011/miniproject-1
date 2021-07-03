@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import { Modal, Button, Input, Form, Upload, DatePicker } from 'antd';
-import { UploadOutlined } from '@ant-design/icons';
 import './CreateProject.scss';
-import 'antd/dist/antd.css';
+import { UploadOutlined, PlusOutlined, ArrowLeftOutlined } from '@ant-design/icons';
+import visaLogo from '../../assets/logos/VisaBlue.svg';
 import { ProjectService } from '../../_services/projectService';
 
 function CreateProject() {
   const projectService = new ProjectService();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const { TextArea } = Input;
+  const [isCardModalVisible, setIsCardModalVisible] = useState(false);
+  const [paymentCard, setPaymentCard] = useState(1)
+  const showCardModal = () => {
+    setIsCardModalVisible(true);
+  };
+
+  const handleCardCancel = () => {
+    setIsCardModalVisible(false);
+  };
+
   const showModal = () => {
     setIsModalVisible(true);
   };
@@ -18,6 +28,7 @@ function CreateProject() {
   const onFinish = (values: any) => {
     projectService.createProject(values).then(res => {
       handleCancel();
+      showCardModal();
     }).catch(e => console.log(e))
   };
 
@@ -75,6 +86,32 @@ function CreateProject() {
           </div>
 
         </Form>
+
+      </Modal>
+      <Modal title={<div className="title"><div className="icon"><ArrowLeftOutlined /></div><div>Create card</div><div></div></div>} width={500} footer={null} className="createProjectModal" visible={isCardModalVisible} onCancel={handleCardCancel}>
+
+
+        <div className="radio-button">
+          <form className="form">
+
+            <div className="inputGroup">
+              <input id="radio1" value="1" checked={paymentCard == 1} name="radio" type="radio" />
+              <label htmlFor="radio1"><img src={visaLogo}></img>Visa credit card ending with 2345</label>
+            </div>
+            <div className="inputGroup">
+              <input id="radio2" name="radio" type="radio" />
+              <label htmlFor="radio2"><img src={visaLogo}></img>Visa credit card ending with 4567</label>
+            </div>
+            <div className="inputGroup">
+              <div className="addButton" ><div><PlusOutlined className="icon-margin" />
+                Add card</div></div>
+            </div>
+
+            <div className="button-pay">
+              <Button size='large' type="primary" htmlType="submit">Pay</Button>
+            </div>
+          </form>
+        </div>
 
       </Modal>
 
