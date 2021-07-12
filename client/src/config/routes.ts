@@ -1,6 +1,6 @@
 import IRoute from "../interfaces/route";
 import CreateProject from "../pages/create-project/CreateProject";
-import MakePayment from "../pages/make-payment/MakePayment";
+import Section from "../pages/section/Section";
 import { RouteNames } from "./routeNames";
 
 const routes: IRoute[] = [
@@ -12,9 +12,9 @@ const routes: IRoute[] = [
         showInSidebar: '0'
     },
     {
-        path: RouteNames.makePayment,
+        path: RouteNames.section,
         name: 'Make Payment',
-        component: MakePayment,
+        component: Section,
         exact: true,
         showInSidebar: '0'
     },

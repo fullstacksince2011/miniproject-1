@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HashRouter, Route, Switch, RouteComponentProps } from 'react-router-dom';
 import './App.scss';
+
 import 'antd/dist/antd.css';
 import routes from './config/routes';
 

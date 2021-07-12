@@ -4,6 +4,8 @@ import './CreateProject.scss';
 import { UploadOutlined, PlusOutlined, ArrowLeftOutlined } from '@ant-design/icons';
 import visaLogo from '../../assets/logos/VisaBlue.svg';
 import { ProjectService } from '../../_services/projectService';
+import { Link } from 'react-router-dom';
+import { RouteNames } from '../../config/routeNames';
 
 function CreateProject() {
   const projectService = new ProjectService();
@@ -61,7 +63,7 @@ function CreateProject() {
             <DatePicker className="w-100" placeholder="Delivery Date" />
           </Form.Item>
           <Form.Item name="cost" rules={[{ required: true, message: 'Please input project cost!' }]}>
-            <Input placeholder="Project cost" />
+            <Input type="number" placeholder="Project cost" />
           </Form.Item>
           <div className="bottom-details">
             <div className="detail-item">
@@ -108,7 +110,7 @@ function CreateProject() {
             </div>
 
             <div className="button-pay">
-              <Button size='large' type="primary" htmlType="submit">Pay</Button>
+              <Link to={RouteNames.section}><Button size='large' type="primary" htmlType="button">Pay</Button></Link>
             </div>
           </form>
         </div>

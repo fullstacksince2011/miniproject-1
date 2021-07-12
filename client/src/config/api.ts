@@ -5,6 +5,9 @@ export const api = {
         get create() {
             return `project`
         },
+        get get() {
+            return `project`
+        },
 
     },
 
